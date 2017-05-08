@@ -6,5 +6,5 @@ NGINX web server serving static resources (the [Angular2 Demo](https://github.co
 Create image / run:
 
     docker build -t nginx-example:latest .
-    docker run -d --name nginx-example -p 80:80 -p 443:443 nginx-example:latest
+    docker run -d --name nginx-example -p 80:80 -p 443:443 --restart=always nginx-example:latest
 
