@@ -34,13 +34,13 @@ set CONNECTION_URL=jdbc:mysql://$MYSQL_URI/sample
 echo "Connection URL: " $CONNECTION_URL
 
 # Add MySQL module
-# module add --name=com.mysql.driver --resources=$JBOSS_HOME/customization/mysql-connector-java-5.1.42-bin.jar --dependencies=javax.api,javax.transaction.api
+module add --name=com.mysql.driver --resources=$JBOSS_HOME/customization/mysql-connector-java-5.1.42-bin.jar --dependencies=javax.api,javax.transaction.api
 
 # Add MySQL driver
-# /subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql.driver,driver-class-name=com.mysql.jdbc.Driver, driver-xa-datasource-class-name=com.mysql.jdbc.jdbc2.optional.MysqlXADataSource)
+/subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql.driver,driver-class-name=com.mysql.jdbc.Driver, driver-xa-datasource-class-name=com.mysql.jdbc.jdbc2.optional.MysqlXADataSource)
 
 # Add MySQL datasource
-xa-data-source add --name=testDb --driver-name=mysql --jndi-name=java:/jdbc/testDb --user-name=test --password=secret --xa-datasource-properties=[{URL=jdbc:mysql://mysql-link:3306/test_schema}]
+# xa-data-source add --name=testDb --driver-name=mysql --jndi-name=java:/jdbc/testDb --user-name=test --password=secret --xa-datasource-properties=[{URL=jdbc:mysql://mysql-link:3306/test_schema}]
 
 # Deploy application
 deploy $JBOSS_HOME/customization/webapp-project.war
