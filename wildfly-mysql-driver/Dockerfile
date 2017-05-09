@@ -9,3 +9,5 @@ RUN /opt/jboss/wildfly/bin/jboss-cli.sh -c "module add --name=com.mysql --resour
 RUN /opt/jboss/wildfly/bin/jboss-cli.sh -c "/subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql.driver,driver-class-name=com.mysql.jdbc.Driver, driver-xa-datasource-class-name=com.mysql.jdbc.jdbc2.optional.MysqlXADataSource)"
 
 RUN /opt/jboss/wildfly/bin/jboss-cli.sh -c "xa-data-source add --name=testDb --driver-name=mysql --jndi-name=java:/jdbc/testDb --user-name=test --password=secret --xa-datasource-properties=[{URL=jdbc:mysql://mysql-link:3306/test_schema}]"
+
+RUN /opt/jboss/wildfly/bin/jboss-cli.sh -c "deploy /root/webapp-project.war webapp-project.war"
