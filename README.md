@@ -8,3 +8,10 @@ Create image / run:
     docker build -t nginx-example:latest .
     docker run -d --name nginx-example -p 80:80 -p 443:443 --restart=always nginx-example:latest
 
+## MySQL with data volume
+MySQL database, with a persistent data volume, using Docker Compose.
+
+Create image / run:
+
+    docker-compose up -d
+
