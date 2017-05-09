@@ -1,4 +1,4 @@
 FROM jboss/wildfly:latest
 
-ADD installation /root/installation
-CMD "/opt/jboss/wildfly/customization/install.sh"
+ADD installation /opt/jboss/wildfly/installation
+CMD ["/opt/jboss/wildfly/installation/install.sh"]
