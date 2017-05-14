@@ -1,0 +1,34 @@
+version: '2'
+services:
+  wildfly:
+    container_name: "wildfly-example"
+    build: 'wildfly'
+    restart: always
+    ports:
+     - "443:8443"
+     - "80:9990"
+    environment:
+      DB_URL: 'jdbc:mysql://mysql:3306/user_auth'
+      DB_USER: 'test'
+      DB_PASSWORD: 'secret'
+      DATASOURCE_JNDI_NAME: 'java:/jdbc/userauth'
+      DEPLOYMENT_UNIT: 'user-auth-ear-1.0.0-SNAPSHOT.ear'
+    links:
+    - mysql
+    
+  mysql:
+    container_name: mysql-example
+    restart: always
+    image: mysql:latest
+    expose:
+     - "3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root-secret'
+      MYSQL_DATABASE: 'user_auth'
+      MYSQL_USER: 'test'
+      MYSQL_PASSWORD: 'secret'
+    volumes:
+      - my-datavolume:/var/lib/mysql
+      
+volumes:
+  my-datavolume:
