@@ -20,5 +20,7 @@ JBoss Wildfly Java EE server with MySQL driver/datasource.
 
 Create image / run:
 
-    docker build -t wildfly-example:latest .
-    docker run -d --name wildfly-example -p 8080:8080 -p 9990:9990 --restart=always wildfly-example:latest
+    docker-compose up -d --build
+
+Access frontend at https://localhost/user-auth
+
