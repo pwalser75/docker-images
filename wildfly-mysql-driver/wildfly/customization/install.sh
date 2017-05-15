@@ -43,13 +43,12 @@ cli "reload"
 cli "/subsystem=undertow/server=default-server/https-listener=https:add(socket-binding=\"https\",security-realm=\"ssl-only-realm\",verify-client=\"REQUESTED\",enabled-protocols=\"TLSv1.1,TLSv1.2\",enabled-cipher-suites=\"TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA\",max-post-size=\"52428800\")"
 
 echo "Add MySQL module"
-cli "module add --name=com.mysql.driver --resources=\"$JBOSS_HOME/customization/mysql-connector-java-5.1.42-bin.jar\" --dependencies=\"javax.api,javax.transaction.api\""
-
+cli "module add --name=com.mysql.driver --resources=$JBOSS_HOME/customization/mysql-connector-java-5.1.42-bin.jar --dependencies=javax.api,javax.transaction.api"
 echo "Add MySQL driver"
 cli "/subsystem=datasources/jdbc-driver=mysql:add(driver-name=mysql,driver-module-name=com.mysql.driver,driver-class-name=com.mysql.jdbc.Driver, driver-xa-datasource-class-name=com.mysql.jdbc.jdbc2.optional.MysqlXADataSource)"
 
 echo "Add MySQL datasource"
-cli "xa-data-source add --name=testDb --driver-name=mysql --jndi-name=\"$DATASOURCE_JNDI_NAME\" --user-name=\"$DB_USER\" --password=\"$DB_PASSWORD\" --xa-datasource-properties=[{URL=$DB_URL}]"
+cli "xa-data-source add --name=testDb --driver-name=mysql --jndi-name=$DATASOURCE_JNDI_NAME --user-name=$DB_USER --password=$DB_PASSWORD --xa-datasource-properties=[{URL=$DB_URL}]"
 
 echo "Deploy application"
 cli "deploy $JBOSS_HOME/customization/$DEPLOYMENT_UNIT"

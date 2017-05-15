@@ -1,0 +1,1404 @@
+2017-05-15 09:44:09,381 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-05-15 09:44:10,083 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-05-15 09:44:10,194 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-05-15 09:44:10,206 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = ANSI_X3.4-1968
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /opt/jboss/wildfly
+	jboss.host.name = 356e53be4be0
+	jboss.modules.dir = /opt/jboss/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = 356e53be4be0
+	jboss.qualified.host.name = 356e53be4be0
+	jboss.server.base.dir = /opt/jboss/wildfly/standalone
+	jboss.server.config.dir = /opt/jboss/wildfly/standalone/configuration
+	jboss.server.data.dir = /opt/jboss/wildfly/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/wildfly/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/wildfly/standalone/log
+	jboss.server.name = 356e53be4be0
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/wildfly/standalone/configuration/logging.properties
+	module.path = /opt/jboss/wildfly/modules
+	org.jboss.boot.log.file = /opt/jboss/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-514.16.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/wildfly/jboss-modules.jar -mp /opt/jboss/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/opt/jboss/wildfly -Djboss.server.base.dir=/opt/jboss/wildfly/standalone -b 0.0.0.0 -c standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = ANSI_X3.4-1968
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = UTC
+2017-05-15 09:44:10,207 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/opt/jboss/wildfly/standalone/log/server.log -Dlogging.configuration=file:/opt/jboss/wildfly/standalone/configuration/logging.properties 
+2017-05-15 09:44:14,558 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-05-15 09:44:14,788 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.4.0.Final
+2017-05-15 09:44:14,887 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.4.0.Final
+2017-05-15 09:44:15,306 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-05-15 09:44:15,599 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 2 core threads with 16 task threads based on your 1 available processors
+2017-05-15 09:44:15,793 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-05-15 09:44:15,996 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-05-15 09:44:15,748 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-05-15 09:44:16,034 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-05-15 09:44:16,235 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-05-15 09:44:16,547 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.21.Final
+2017-05-15 09:44:16,551 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-05-15 09:44:16,848 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-05-15 09:44:17,248 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-05-15 09:44:17,246 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-05-15 09:44:17,673 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path '/opt/jboss/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-05-15 09:44:17,674 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2017-05-15 09:44:18,025 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-05-15 09:44:18,400 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-05-15 09:44:18,662 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 16 (per class), which is derived from thread worker pool sizing.
+2017-05-15 09:44:18,666 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 4 (per class), which is derived from the number of CPUs on this host.
+2017-05-15 09:44:18,762 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2017-05-15 09:44:19,202 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2017-05-15 09:44:19,203 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2017-05-15 09:44:19,437 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /opt/jboss/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-05-15 09:44:19,521 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/jboss/wildfly/standalone/deployments
+2017-05-15 09:44:20,160 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-05-15 09:44:20,406 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:20,463 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:20,407 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:20,466 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:20,407 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:20,467 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:20,548 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:8443
+2017-05-15 09:44:20,892 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-05-15 09:44:21,086 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-05-15 09:44:22,028 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-05-15 09:44:22,029 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-05-15 09:44:22,029 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 14165ms - Started 331 of 577 services (393 services are lazy, passive or on-demand)
+2017-05-15 09:44:26,705 ERROR [stderr] (management-handler-thread - 1) java.io.IOException: Mount point not found
+2017-05-15 09:44:26,706 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileStore.findMountEntry(LinuxFileStore.java:91)
+2017-05-15 09:44:26,706 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.UnixFileStore.<init>(UnixFileStore.java:65)
+2017-05-15 09:44:26,706 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileStore.<init>(LinuxFileStore.java:44)
+2017-05-15 09:44:26,707 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:51)
+2017-05-15 09:44:26,707 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:39)
+2017-05-15 09:44:26,707 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.UnixFileSystemProvider.getFileStore(UnixFileSystemProvider.java:368)
+2017-05-15 09:44:26,707 ERROR [stderr] (management-handler-thread - 1) 	at java.nio.file.Files.getFileStore(Files.java:1461)
+2017-05-15 09:44:26,707 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.getPosixAttributes(FilePersistenceUtils.java:124)
+2017-05-15 09:44:26,707 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.createTempFileWithAttributes(FilePersistenceUtils.java:112)
+2017-05-15 09:44:26,707 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.writeToTempFile(FilePersistenceUtils.java:99)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.ConfigurationFilePersistenceResource.doCommit(ConfigurationFilePersistenceResource.java:55)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.AbstractFilePersistenceResource.commit(AbstractFilePersistenceResource.java:58)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.ModelControllerImpl$4.commit(ModelControllerImpl.java:789)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AbstractOperationContext.executeDoneStage(AbstractOperationContext.java:743)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:680)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:370)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1329)
+2017-05-15 09:44:26,708 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:400)
+2017-05-15 09:44:26,709 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:222)
+2017-05-15 09:44:26,709 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:208)
+2017-05-15 09:44:26,709 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130)
+2017-05-15 09:44:26,709 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:152)
+2017-05-15 09:44:26,709 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:26,709 ERROR [stderr] (management-handler-thread - 1) 	at java.security.AccessController.doPrivileged(Native Method)
+2017-05-15 09:44:26,709 ERROR [stderr] (management-handler-thread - 1) 	at javax.security.auth.Subject.doAs(Subject.java:422)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:149)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$ManagementRequestContextImpl$1.doExecute(AbstractMessageHandler.java:363)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:472)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at java.lang.Thread.run(Thread.java:748)
+2017-05-15 09:44:26,710 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2017-05-15 09:44:28,547 ERROR [stderr] (management-handler-thread - 2) java.io.IOException: Mount point not found
+2017-05-15 09:44:28,547 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileStore.findMountEntry(LinuxFileStore.java:91)
+2017-05-15 09:44:28,555 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.UnixFileStore.<init>(UnixFileStore.java:65)
+2017-05-15 09:44:28,555 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileStore.<init>(LinuxFileStore.java:44)
+2017-05-15 09:44:28,555 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:51)
+2017-05-15 09:44:28,555 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:39)
+2017-05-15 09:44:28,555 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.UnixFileSystemProvider.getFileStore(UnixFileSystemProvider.java:368)
+2017-05-15 09:44:28,555 ERROR [stderr] (management-handler-thread - 2) 	at java.nio.file.Files.getFileStore(Files.java:1461)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.getPosixAttributes(FilePersistenceUtils.java:124)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.createTempFileWithAttributes(FilePersistenceUtils.java:112)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.writeToTempFile(FilePersistenceUtils.java:99)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.ConfigurationFilePersistenceResource.doCommit(ConfigurationFilePersistenceResource.java:55)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.AbstractFilePersistenceResource.commit(AbstractFilePersistenceResource.java:58)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.ModelControllerImpl$4.commit(ModelControllerImpl.java:789)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AbstractOperationContext.executeDoneStage(AbstractOperationContext.java:743)
+2017-05-15 09:44:28,556 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:680)
+2017-05-15 09:44:28,557 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:370)
+2017-05-15 09:44:28,557 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1329)
+2017-05-15 09:44:28,557 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:400)
+2017-05-15 09:44:28,557 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:222)
+2017-05-15 09:44:28,557 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:208)
+2017-05-15 09:44:28,557 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130)
+2017-05-15 09:44:28,557 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:152)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at java.security.AccessController.doPrivileged(Native Method)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at javax.security.auth.Subject.doAs(Subject.java:422)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:149)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$ManagementRequestContextImpl$1.doExecute(AbstractMessageHandler.java:363)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:472)
+2017-05-15 09:44:28,558 ERROR [stderr] (management-handler-thread - 2) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2017-05-15 09:44:28,559 ERROR [stderr] (management-handler-thread - 2) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2017-05-15 09:44:28,559 ERROR [stderr] (management-handler-thread - 2) 	at java.lang.Thread.run(Thread.java:748)
+2017-05-15 09:44:28,559 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2017-05-15 09:44:30,345 ERROR [stderr] (management-handler-thread - 2) java.io.IOException: Mount point not found
+2017-05-15 09:44:30,345 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileStore.findMountEntry(LinuxFileStore.java:91)
+2017-05-15 09:44:30,345 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.UnixFileStore.<init>(UnixFileStore.java:65)
+2017-05-15 09:44:30,345 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileStore.<init>(LinuxFileStore.java:44)
+2017-05-15 09:44:30,346 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:51)
+2017-05-15 09:44:30,346 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:39)
+2017-05-15 09:44:30,346 ERROR [stderr] (management-handler-thread - 2) 	at sun.nio.fs.UnixFileSystemProvider.getFileStore(UnixFileSystemProvider.java:368)
+2017-05-15 09:44:30,346 ERROR [stderr] (management-handler-thread - 2) 	at java.nio.file.Files.getFileStore(Files.java:1461)
+2017-05-15 09:44:30,360 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.getPosixAttributes(FilePersistenceUtils.java:124)
+2017-05-15 09:44:30,361 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.createTempFileWithAttributes(FilePersistenceUtils.java:112)
+2017-05-15 09:44:30,361 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.writeToTempFile(FilePersistenceUtils.java:99)
+2017-05-15 09:44:30,361 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.ConfigurationFilePersistenceResource.doCommit(ConfigurationFilePersistenceResource.java:55)
+2017-05-15 09:44:30,361 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.persistence.AbstractFilePersistenceResource.commit(AbstractFilePersistenceResource.java:58)
+2017-05-15 09:44:30,361 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.ModelControllerImpl$4.commit(ModelControllerImpl.java:789)
+2017-05-15 09:44:30,361 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AbstractOperationContext.executeDoneStage(AbstractOperationContext.java:743)
+2017-05-15 09:44:30,362 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:680)
+2017-05-15 09:44:30,362 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:370)
+2017-05-15 09:44:30,362 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1329)
+2017-05-15 09:44:30,362 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:400)
+2017-05-15 09:44:30,362 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:222)
+2017-05-15 09:44:30,362 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:208)
+2017-05-15 09:44:30,362 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130)
+2017-05-15 09:44:30,363 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:152)
+2017-05-15 09:44:30,363 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:30,363 ERROR [stderr] (management-handler-thread - 2) 	at java.security.AccessController.doPrivileged(Native Method)
+2017-05-15 09:44:30,363 ERROR [stderr] (management-handler-thread - 2) 	at javax.security.auth.Subject.doAs(Subject.java:422)
+2017-05-15 09:44:30,363 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:149)
+2017-05-15 09:44:30,363 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:30,363 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$ManagementRequestContextImpl$1.doExecute(AbstractMessageHandler.java:363)
+2017-05-15 09:44:30,364 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:472)
+2017-05-15 09:44:30,364 ERROR [stderr] (management-handler-thread - 2) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2017-05-15 09:44:30,364 ERROR [stderr] (management-handler-thread - 2) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2017-05-15 09:44:30,364 ERROR [stderr] (management-handler-thread - 2) 	at java.lang.Thread.run(Thread.java:748)
+2017-05-15 09:44:30,377 ERROR [stderr] (management-handler-thread - 2) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2017-05-15 09:44:32,323 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-05-15 09:44:32,351 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2017-05-15 09:44:32,359 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-05-15 09:44:32,369 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:8443
+2017-05-15 09:44:32,386 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-05-15 09:44:32,388 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTP listener default suspending
+2017-05-15 09:44:32,388 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:8080
+2017-05-15 09:44:32,391 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.0.Final stopping
+2017-05-15 09:44:32,425 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2017-05-15 09:44:32,467 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 159ms
+2017-05-15 09:44:32,472 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-05-15 09:44:32,472 DEBUG [org.jboss.as.config] (MSC service thread 1-1) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = ANSI_X3.4-1968
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.naming.factory.url.pkgs = org.jboss.as.naming.interfaces:org.jboss.ejb.client.naming
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.security.auth.login.config = jar:file:/opt/jboss/wildfly/modules/system/layers/base/org/picketbox/main/picketbox-4.9.6.Final.jar!/auth.conf
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /opt/jboss/wildfly
+	jboss.host.name = 356e53be4be0
+	jboss.modules.dir = /opt/jboss/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = 356e53be4be0
+	jboss.qualified.host.name = 356e53be4be0
+	jboss.server.base.dir = /opt/jboss/wildfly/standalone
+	jboss.server.config.dir = /opt/jboss/wildfly/standalone/configuration
+	jboss.server.data.dir = /opt/jboss/wildfly/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/wildfly/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/wildfly/standalone/log
+	jboss.server.name = 356e53be4be0
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/wildfly/standalone/configuration/logging.properties
+	module.path = /opt/jboss/wildfly/modules
+	org.apache.xml.security.ignoreLineBreaks = true
+	org.jboss.boot.log.file = /opt/jboss/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.jboss.security.context.ThreadLocal = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-514.16.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/wildfly/jboss-modules.jar -mp /opt/jboss/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/opt/jboss/wildfly -Djboss.server.base.dir=/opt/jboss/wildfly/standalone -b 0.0.0.0 -c standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = ANSI_X3.4-1968
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.nio.ch.bugLevel = 
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = UTC
+2017-05-15 09:44:32,473 DEBUG [org.jboss.as.config] (MSC service thread 1-1) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/opt/jboss/wildfly/standalone/log/server.log -Dlogging.configuration=file:/opt/jboss/wildfly/standalone/configuration/logging.properties 
+2017-05-15 09:44:32,982 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-05-15 09:44:33,010 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-05-15 09:44:33,069 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-05-15 09:44:33,144 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-05-15 09:44:33,147 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-05-15 09:44:33,164 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-05-15 09:44:33,172 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path '/opt/jboss/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-05-15 09:44:33,177 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-05-15 09:44:33,184 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 2 core threads with 16 task threads based on your 1 available processors
+2017-05-15 09:44:33,188 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-05-15 09:44:33,189 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-05-15 09:44:33,197 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-05-15 09:44:33,206 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2017-05-15 09:44:33,206 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-05-15 09:44:33,207 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-05-15 09:44:33,207 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 4 (per class), which is derived from the number of CPUs on this host.
+2017-05-15 09:44:33,207 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 16 (per class), which is derived from thread worker pool sizing.
+2017-05-15 09:44:33,233 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2017-05-15 09:44:33,234 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2017-05-15 09:44:33,234 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2017-05-15 09:44:33,319 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-05-15 09:44:33,376 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /opt/jboss/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-05-15 09:44:33,384 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/jboss/wildfly/standalone/deployments
+2017-05-15 09:44:33,395 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-05-15 09:44:33,527 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:33,528 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:33,610 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:33,612 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 60) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:33,612 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:33,613 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:33,933 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-05-15 09:44:33,934 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-05-15 09:44:33,934 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 1460ms - Started 332 of 579 services (396 services are lazy, passive or on-demand)
+2017-05-15 09:44:34,013 INFO  [org.jboss.as.protocol] (management I/O-2) WFLYPRT0057:  cancelled task by interrupting thread Thread[management-handler-thread - 2,5,management-handler-thread]
+2017-05-15 09:44:35,651 WARN  [org.wildfly.security] (MSC service thread 1-2) ELY01077: Invalid alias "TLS_RSA_WITH_DES_CBC_SHA" for missing mechanism database entry "TLS_RSA_FIPS_WITH_DES_CBC_SHA"
+2017-05-15 09:44:35,665 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:8443
+2017-05-15 09:44:35,674 ERROR [stderr] (management-handler-thread - 3) java.io.IOException: Mount point not found
+2017-05-15 09:44:35,675 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileStore.findMountEntry(LinuxFileStore.java:91)
+2017-05-15 09:44:35,675 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.UnixFileStore.<init>(UnixFileStore.java:65)
+2017-05-15 09:44:35,686 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileStore.<init>(LinuxFileStore.java:44)
+2017-05-15 09:44:35,686 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:51)
+2017-05-15 09:44:35,686 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:39)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.UnixFileSystemProvider.getFileStore(UnixFileSystemProvider.java:368)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at java.nio.file.Files.getFileStore(Files.java:1461)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.getPosixAttributes(FilePersistenceUtils.java:124)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.createTempFileWithAttributes(FilePersistenceUtils.java:112)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.writeToTempFile(FilePersistenceUtils.java:99)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.ConfigurationFilePersistenceResource.doCommit(ConfigurationFilePersistenceResource.java:55)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.AbstractFilePersistenceResource.commit(AbstractFilePersistenceResource.java:58)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl$4.commit(ModelControllerImpl.java:789)
+2017-05-15 09:44:35,687 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.executeDoneStage(AbstractOperationContext.java:743)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:680)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:370)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1329)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:400)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:222)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:208)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:152)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:35,688 ERROR [stderr] (management-handler-thread - 3) 	at java.security.AccessController.doPrivileged(Native Method)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at javax.security.auth.Subject.doAs(Subject.java:422)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:149)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$ManagementRequestContextImpl$1.doExecute(AbstractMessageHandler.java:363)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:472)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at java.lang.Thread.run(Thread.java:748)
+2017-05-15 09:44:35,689 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2017-05-15 09:44:39,289 INFO  [org.jboss.as.connector.subsystems.datasources] (management-handler-thread - 3) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-05-15 09:44:39,290 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-05-15 09:44:39,304 ERROR [stderr] (management-handler-thread - 3) java.io.IOException: Mount point not found
+2017-05-15 09:44:39,304 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileStore.findMountEntry(LinuxFileStore.java:91)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.UnixFileStore.<init>(UnixFileStore.java:65)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileStore.<init>(LinuxFileStore.java:44)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:51)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:39)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.UnixFileSystemProvider.getFileStore(UnixFileSystemProvider.java:368)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at java.nio.file.Files.getFileStore(Files.java:1461)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.getPosixAttributes(FilePersistenceUtils.java:124)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.createTempFileWithAttributes(FilePersistenceUtils.java:112)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.writeToTempFile(FilePersistenceUtils.java:99)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.ConfigurationFilePersistenceResource.doCommit(ConfigurationFilePersistenceResource.java:55)
+2017-05-15 09:44:39,305 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.AbstractFilePersistenceResource.commit(AbstractFilePersistenceResource.java:58)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl$4.commit(ModelControllerImpl.java:789)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.executeDoneStage(AbstractOperationContext.java:743)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:680)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:370)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1329)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:400)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:222)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:208)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:152)
+2017-05-15 09:44:39,306 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:39,307 ERROR [stderr] (management-handler-thread - 3) 	at java.security.AccessController.doPrivileged(Native Method)
+2017-05-15 09:44:39,307 ERROR [stderr] (management-handler-thread - 3) 	at javax.security.auth.Subject.doAs(Subject.java:422)
+2017-05-15 09:44:39,307 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:149)
+2017-05-15 09:44:39,315 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:39,315 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$ManagementRequestContextImpl$1.doExecute(AbstractMessageHandler.java:363)
+2017-05-15 09:44:39,315 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:472)
+2017-05-15 09:44:39,315 ERROR [stderr] (management-handler-thread - 3) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2017-05-15 09:44:39,315 ERROR [stderr] (management-handler-thread - 3) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2017-05-15 09:44:39,315 ERROR [stderr] (management-handler-thread - 3) 	at java.lang.Thread.run(Thread.java:748)
+2017-05-15 09:44:39,315 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2017-05-15 09:44:41,329 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/jdbc/userauth]
+2017-05-15 09:44:41,355 ERROR [stderr] (management-handler-thread - 1) java.io.IOException: Mount point not found
+2017-05-15 09:44:41,356 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileStore.findMountEntry(LinuxFileStore.java:91)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.UnixFileStore.<init>(UnixFileStore.java:65)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileStore.<init>(LinuxFileStore.java:44)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:51)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:39)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at sun.nio.fs.UnixFileSystemProvider.getFileStore(UnixFileSystemProvider.java:368)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at java.nio.file.Files.getFileStore(Files.java:1461)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.getPosixAttributes(FilePersistenceUtils.java:124)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.createTempFileWithAttributes(FilePersistenceUtils.java:112)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.writeToTempFile(FilePersistenceUtils.java:99)
+2017-05-15 09:44:41,374 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.ConfigurationFilePersistenceResource.doCommit(ConfigurationFilePersistenceResource.java:55)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.persistence.AbstractFilePersistenceResource.commit(AbstractFilePersistenceResource.java:58)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.ModelControllerImpl$4.commit(ModelControllerImpl.java:789)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AbstractOperationContext.executeDoneStage(AbstractOperationContext.java:743)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:680)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:370)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1329)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:400)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:222)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:208)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:152)
+2017-05-15 09:44:41,375 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at java.security.AccessController.doPrivileged(Native Method)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at javax.security.auth.Subject.doAs(Subject.java:422)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:149)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$ManagementRequestContextImpl$1.doExecute(AbstractMessageHandler.java:363)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:472)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at java.lang.Thread.run(Thread.java:748)
+2017-05-15 09:44:41,376 ERROR [stderr] (management-handler-thread - 1) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2017-05-15 09:44:44,084 INFO  [org.jboss.as.repository] (management-handler-thread - 3) WFLYDR0001: Content added at location /opt/jboss/wildfly/standalone/data/content/8c/b04b538dab0ebeb7f89403fd579708f848c075/content
+2017-05-15 09:44:44,125 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "user-auth-ear-1.0.0-SNAPSHOT.ear" (runtime-name: "user-auth-ear-1.0.0-SNAPSHOT.ear")
+2017-05-15 09:44:45,923 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-service.jar")
+2017-05-15 09:44:45,929 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-web-service.war")
+2017-05-15 09:44:45,929 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-web-frontend.war")
+2017-05-15 09:44:45,929 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-persistence.jar")
+2017-05-15 09:44:46,403 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for userauth
+2017-05-15 09:44:46,750 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 26) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:44:46,761 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-ear-1.0.0-SNAPSHOT.ear
+2017-05-15 09:44:46,791 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 26) HHH000204: Processing PersistenceUnitInfo [
+	name: userauth
+	...]
+2017-05-15 09:44:46,921 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.2.4.Final
+2017-05-15 09:44:46,965 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 26) HHH000412: Hibernate Core {5.0.10.Final}
+2017-05-15 09:44:46,979 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 26) HHH000206: hibernate.properties not found
+2017-05-15 09:44:46,980 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 26) HHH000021: Bytecode provider name : javassist
+2017-05-15 09:44:47,062 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 26) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-15 09:44:47,311 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-2) Activating CDI extension for Spring Data JPA repositories.
+2017-05-15 09:44:47,339 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment user-auth-persistence.jar
+2017-05-15 09:44:47,406 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-service.jar
+2017-05-15 09:44:47,415 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'RegistrationServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:app/user-auth-service/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:module/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:global/user-auth/user-auth-service/RegistrationServiceImpl
+	java:app/user-auth-service/RegistrationServiceImpl
+	java:module/RegistrationServiceImpl
+
+2017-05-15 09:44:47,415 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UserServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:app/user-auth-service/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:module/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:global/user-auth/user-auth-service/UserServiceImpl
+	java:app/user-auth-service/UserServiceImpl
+	java:module/UserServiceImpl
+
+2017-05-15 09:44:47,415 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'AuthServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:app/user-auth-service/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:module/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:global/user-auth/user-auth-service/AuthServiceImpl
+	java:app/user-auth-service/AuthServiceImpl
+	java:module/AuthServiceImpl
+
+2017-05-15 09:44:47,425 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment user-auth-web-service.war
+2017-05-15 09:44:47,472 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-web-frontend.war
+2017-05-15 09:44:47,638 INFO  [org.jboss.weld.Version] (MSC service thread 1-1) WELD-000900: 2.3.5 (Final)
+2017-05-15 09:44:48,034 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 26) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:48,035 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 26) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:44:48,468 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 58) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:44:48,904 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 26) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-05-15 09:44:49,235 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 58) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-15 09:44:49,341 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 58) Envers integration enabled? : true
+2017-05-15 09:44:50,463 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 58) HHH000228: Running hbm2ddl schema update
+2017-05-15 09:44:50,568 INFO  [org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl] (ServerService Thread Pool -- 58) HHH000262: Table not found: user_account
+2017-05-15 09:44:50,673 INFO  [org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl] (ServerService Thread Pool -- 58) HHH000262: Table not found: user_roles
+2017-05-15 09:44:51,173 INFO  [org.jboss.weld.Event] (MSC service thread 1-1) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2017-05-15 09:44:52,246 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-1) Registering bean for 'ch.frostnova.user.auth.persistence.repository.UserAccountRepository' with qualifiers [@javax.enterprise.inject.Default(), @javax.enterprise.inject.Any()].
+2017-05-15 09:44:52,812 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 16) WFLYUT0021: Registered web context: /user-auth
+2017-05-15 09:44:53,651 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 20) RESTEASY002225: Deploying javax.ws.rs.core.Application: class ch.frostnova.user.auth.web.ws.RestConfig$Proxy$_$$_WeldClientProxy
+2017-05-15 09:44:53,777 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 20) WFLYUT0021: Registered web context: /user-auth/api
+2017-05-15 09:44:53,808 ERROR [stderr] (management-handler-thread - 3) java.io.IOException: Mount point not found
+2017-05-15 09:44:53,809 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileStore.findMountEntry(LinuxFileStore.java:91)
+2017-05-15 09:44:53,809 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.UnixFileStore.<init>(UnixFileStore.java:65)
+2017-05-15 09:44:53,809 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileStore.<init>(LinuxFileStore.java:44)
+2017-05-15 09:44:53,809 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:51)
+2017-05-15 09:44:53,809 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.LinuxFileSystemProvider.getFileStore(LinuxFileSystemProvider.java:39)
+2017-05-15 09:44:53,809 ERROR [stderr] (management-handler-thread - 3) 	at sun.nio.fs.UnixFileSystemProvider.getFileStore(UnixFileSystemProvider.java:368)
+2017-05-15 09:44:53,810 ERROR [stderr] (management-handler-thread - 3) 	at java.nio.file.Files.getFileStore(Files.java:1461)
+2017-05-15 09:44:53,810 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.getPosixAttributes(FilePersistenceUtils.java:124)
+2017-05-15 09:44:53,815 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.createTempFileWithAttributes(FilePersistenceUtils.java:112)
+2017-05-15 09:44:53,815 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.FilePersistenceUtils.writeToTempFile(FilePersistenceUtils.java:99)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.ConfigurationFilePersistenceResource.doCommit(ConfigurationFilePersistenceResource.java:55)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.persistence.AbstractFilePersistenceResource.commit(AbstractFilePersistenceResource.java:58)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl$4.commit(ModelControllerImpl.java:789)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.executeDoneStage(AbstractOperationContext.java:743)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.processStages(AbstractOperationContext.java:680)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:370)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1329)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl.internalExecute(ModelControllerImpl.java:400)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.ModelControllerImpl.execute(ModelControllerImpl.java:222)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.doExecute(ModelControllerClientOperationHandler.java:208)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler.access$300(ModelControllerClientOperationHandler.java:130)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:152)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1$1.run(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at java.security.AccessController.doPrivileged(Native Method)
+2017-05-15 09:44:53,816 ERROR [stderr] (management-handler-thread - 3) 	at javax.security.auth.Subject.doAs(Subject.java:422)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.AccessAuditContext.doAs(AccessAuditContext.java:149)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.controller.remote.ModelControllerClientOperationHandler$ExecuteRequestHandler$1.execute(ModelControllerClientOperationHandler.java:148)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$ManagementRequestContextImpl$1.doExecute(AbstractMessageHandler.java:363)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.as.protocol.mgmt.AbstractMessageHandler$AsyncTaskRunner.run(AbstractMessageHandler.java:472)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at java.lang.Thread.run(Thread.java:748)
+2017-05-15 09:44:53,817 ERROR [stderr] (management-handler-thread - 3) 	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+2017-05-15 09:44:53,818 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0010: Deployed "user-auth-ear-1.0.0-SNAPSHOT.ear" (runtime-name : "user-auth-ear-1.0.0-SNAPSHOT.ear")
+2017-05-15 09:44:55,968 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0236: Suspending server with no timeout.
+2017-05-15 09:44:56,036 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2017-05-15 09:44:56,248 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2017-05-15 09:44:56,248 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 0.0.0.0:8443
+2017-05-15 09:44:56,288 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 58) WFLYUT0022: Unregistered web context: /user-auth/api
+2017-05-15 09:44:56,288 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 28) WFLYUT0022: Unregistered web context: /user-auth
+2017-05-15 09:44:56,317 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2017-05-15 09:44:56,346 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2017-05-15 09:44:56,347 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 58) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:44:56,353 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2017-05-15 09:44:56,358 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 26) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:44:56,366 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:/jdbc/userauth]
+2017-05-15 09:44:56,403 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 26) WFLYCLINF0003: Stopped client-mappings cache from ejb container
+2017-05-15 09:44:56,414 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: user-auth-web-service.war) in 261ms
+2017-05-15 09:44:56,439 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: user-auth-service.jar) in 283ms
+2017-05-15 09:44:56,439 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: user-auth-web-frontend.war) in 285ms
+2017-05-15 09:44:56,440 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: user-auth-persistence.jar) in 284ms
+2017-05-15 09:44:56,440 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2017-05-15 09:44:56,440 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 0.0.0.0:8080
+2017-05-15 09:44:56,448 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0004: Undertow 1.4.0.Final stopping
+2017-05-15 09:44:56,450 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment user-auth-ear-1.0.0-SNAPSHOT.ear (runtime-name: user-auth-ear-1.0.0-SNAPSHOT.ear) in 297ms
+2017-05-15 09:44:56,473 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = mysql
+2017-05-15 09:44:56,490 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) stopped in 336ms
+2017-05-15 09:44:57,251 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-05-15 09:44:57,573 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-05-15 09:44:57,688 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-05-15 09:44:57,689 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = ANSI_X3.4-1968
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /opt/jboss/wildfly
+	jboss.host.name = 356e53be4be0
+	jboss.modules.dir = /opt/jboss/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = 356e53be4be0
+	jboss.qualified.host.name = 356e53be4be0
+	jboss.server.base.dir = /opt/jboss/wildfly/standalone
+	jboss.server.config.dir = /opt/jboss/wildfly/standalone/configuration
+	jboss.server.data.dir = /opt/jboss/wildfly/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/wildfly/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/wildfly/standalone/log
+	jboss.server.name = 356e53be4be0
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/wildfly/standalone/configuration/logging.properties
+	module.path = /opt/jboss/wildfly/modules
+	org.jboss.boot.log.file = /opt/jboss/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-514.16.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/wildfly/jboss-modules.jar -mp /opt/jboss/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/opt/jboss/wildfly -Djboss.server.base.dir=/opt/jboss/wildfly/standalone -b 0.0.0.0 -c standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = ANSI_X3.4-1968
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = UTC
+2017-05-15 09:44:57,689 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/opt/jboss/wildfly/standalone/log/server.log -Dlogging.configuration=file:/opt/jboss/wildfly/standalone/configuration/logging.properties 
+2017-05-15 09:45:00,796 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-05-15 09:45:00,834 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.4.0.Final
+2017-05-15 09:45:00,893 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.4.0.Final
+2017-05-15 09:45:01,049 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-05-15 09:45:01,056 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-05-15 09:45:01,060 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-05-15 09:45:01,097 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-05-15 09:45:01,111 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-05-15 09:45:01,114 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-05-15 09:45:01,156 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.21.Final
+2017-05-15 09:45:01,286 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 2 core threads with 16 task threads based on your 1 available processors
+2017-05-15 09:45:01,495 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-05-15 09:45:01,534 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-05-15 09:45:01,750 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-05-15 09:45:01,811 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-05-15 09:45:02,062 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-05-15 09:45:01,997 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path '/opt/jboss/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-05-15 09:45:02,147 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2017-05-15 09:45:02,362 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-05-15 09:45:02,363 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-05-15 09:45:02,387 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-05-15 09:45:02,753 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 16 (per class), which is derived from thread worker pool sizing.
+2017-05-15 09:45:02,754 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 4 (per class), which is derived from the number of CPUs on this host.
+2017-05-15 09:45:02,966 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2017-05-15 09:45:02,989 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2017-05-15 09:45:03,259 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2017-05-15 09:45:03,900 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /opt/jboss/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-05-15 09:45:04,542 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-05-15 09:45:05,079 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/jboss/wildfly/standalone/deployments
+2017-05-15 09:45:05,137 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "user-auth-ear-1.0.0-SNAPSHOT.ear" (runtime-name: "user-auth-ear-1.0.0-SNAPSHOT.ear")
+2017-05-15 09:45:05,489 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:05,490 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:05,512 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:05,512 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:05,520 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 61) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:05,522 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:05,523 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-05-15 09:45:05,524 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/jdbc/userauth]
+2017-05-15 09:45:05,632 WARN  [org.wildfly.security] (MSC service thread 1-2) ELY01077: Invalid alias "TLS_RSA_WITH_DES_CBC_SHA" for missing mechanism database entry "TLS_RSA_FIPS_WITH_DES_CBC_SHA"
+2017-05-15 09:45:05,676 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:8443
+2017-05-15 09:45:06,036 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-05-15 09:45:08,390 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-service.jar")
+2017-05-15 09:45:08,390 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-web-frontend.war")
+2017-05-15 09:45:08,391 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-web-service.war")
+2017-05-15 09:45:08,391 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-persistence.jar")
+2017-05-15 09:45:09,078 INFO  [org.jboss.as.jpa] (MSC service thread 1-1) WFLYJPA0002: Read persistence.xml for userauth
+2017-05-15 09:45:09,477 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 58) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:45:09,499 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment user-auth-ear-1.0.0-SNAPSHOT.ear
+2017-05-15 09:45:09,517 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 58) HHH000204: Processing PersistenceUnitInfo [
+	name: userauth
+	...]
+2017-05-15 09:45:09,664 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.2.4.Final
+2017-05-15 09:45:09,702 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 58) HHH000412: Hibernate Core {5.0.10.Final}
+2017-05-15 09:45:09,704 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 58) HHH000206: hibernate.properties not found
+2017-05-15 09:45:09,705 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 58) HHH000021: Bytecode provider name : javassist
+2017-05-15 09:45:09,802 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 58) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-15 09:45:10,029 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-1) Activating CDI extension for Spring Data JPA repositories.
+2017-05-15 09:45:10,057 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-persistence.jar
+2017-05-15 09:45:10,140 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-web-service.war
+2017-05-15 09:45:10,141 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment user-auth-service.jar
+2017-05-15 09:45:10,144 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'RegistrationServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:app/user-auth-service/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:module/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:global/user-auth/user-auth-service/RegistrationServiceImpl
+	java:app/user-auth-service/RegistrationServiceImpl
+	java:module/RegistrationServiceImpl
+
+2017-05-15 09:45:10,144 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'UserServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:app/user-auth-service/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:module/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:global/user-auth/user-auth-service/UserServiceImpl
+	java:app/user-auth-service/UserServiceImpl
+	java:module/UserServiceImpl
+
+2017-05-15 09:45:10,144 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'AuthServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:app/user-auth-service/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:module/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:global/user-auth/user-auth-service/AuthServiceImpl
+	java:app/user-auth-service/AuthServiceImpl
+	java:module/AuthServiceImpl
+
+2017-05-15 09:45:10,165 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment user-auth-web-frontend.war
+2017-05-15 09:45:10,381 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 2.3.5 (Final)
+2017-05-15 09:45:10,720 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:10,722 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 58) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:45:11,123 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 61) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:45:11,522 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 58) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-05-15 09:45:11,970 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 61) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-15 09:45:12,101 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 61) Envers integration enabled? : true
+2017-05-15 09:45:13,036 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 61) HHH000228: Running hbm2ddl schema update
+2017-05-15 09:45:13,498 INFO  [org.jboss.weld.Event] (MSC service thread 1-2) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
+2017-05-15 09:45:14,902 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-2) Registering bean for 'ch.frostnova.user.auth.persistence.repository.UserAccountRepository' with qualifiers [@javax.enterprise.inject.Default(), @javax.enterprise.inject.Any()].
+2017-05-15 09:45:15,564 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: /user-auth
+2017-05-15 09:45:16,431 INFO  [org.jboss.resteasy.resteasy_jaxrs.i18n] (ServerService Thread Pool -- 61) RESTEASY002225: Deploying javax.ws.rs.core.Application: class ch.frostnova.user.auth.web.ws.RestConfig$Proxy$_$$_WeldClientProxy
+2017-05-15 09:45:16,558 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 61) WFLYUT0021: Registered web context: /user-auth/api
+2017-05-15 09:45:16,616 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "user-auth-ear-1.0.0-SNAPSHOT.ear" (runtime-name : "user-auth-ear-1.0.0-SNAPSHOT.ear")
+2017-05-15 09:45:16,805 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2017-05-15 09:45:16,806 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2017-05-15 09:45:16,806 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 20186ms - Started 717 of 978 services (443 services are lazy, passive or on-demand)
+2017-05-15 09:45:25,147 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-8) HHH000397: Using ASTQueryTranslatorFactory
+2017-05-15 09:45:25,312 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-8) SQL Error: 0, SQLState: null
+2017-05-15 09:45:25,312 ERROR [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (default task-8) javax.resource.ResourceException: IJ000460: Error checking for a transaction
+2017-05-15 09:45:25,326 ERROR [org.jboss.as.ejb3.invocation] (default task-8) WFLYEJB0034: EJB Invocation failed on component UserServiceImpl for method public abstract java.util.List ch.frostnova.user.auth.api.service.UserService.list(): javax.ejb.EJBException: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:187)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:277)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:327)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:636)
+	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73)
+	at ch.frostnova.user.auth.api.service.UserService$$$view2.list(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:433)
+	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+	at org.jboss.weld.bean.proxy.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:67)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at ch.frostnova.user.auth.service.UserService$378389728$Proxy$_$$_Weld$EnterpriseProxy$.list(Unknown Source)
+	at ch.frostnova.user.auth.web.ws.UserEndpoint.list(UserEndpoint.java:41)
+	at ch.frostnova.user.auth.web.ws.UserEndpoint$Proxy$_$$_WeldClientProxy.list(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:492)
+	at org.hibernate.jpa.criteria.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:50)
+	at org.jboss.as.jpa.container.TypedQueryNonTxInvocationDetacher.getResultList(TypedQueryNonTxInvocationDetacher.java:58)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:503)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:488)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:460)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy89.findAll(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.bean.proxy.AbstractBeanInstance.invoke(AbstractBeanInstance.java:38)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at ch.frostnova.user.auth.persistence.repository.CrudRepository$UserAccountRepository$2009101270$Proxy$_$$_WeldClientProxy.findAll(Unknown Source)
+	at ch.frostnova.user.auth.service.UserServiceImpl.list(UserServiceImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:82)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:93)
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)
+	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
+	... 99 more
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:90)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:112)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.connection(StatementPreparerImpl.java:47)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:146)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:172)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:148)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1929)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1898)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1876)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:919)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:336)
+	at org.hibernate.loader.Loader.doList(Loader.java:2617)
+	at org.hibernate.loader.Loader.doList(Loader.java:2600)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2429)
+	at org.hibernate.loader.Loader.list(Loader.java:2424)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:501)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:371)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:216)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1326)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:87)
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:606)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:483)
+	... 155 more
+Caused by: java.sql.SQLException: javax.resource.ResourceException: IJ000460: Error checking for a transaction
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:146)
+	at org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:66)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:386)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:87)
+	... 176 more
+Caused by: javax.resource.ResourceException: IJ000460: Error checking for a transaction
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:424)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:747)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:138)
+	... 180 more
+Caused by: javax.resource.ResourceException: IJ000459: Transaction is not active: tx=TransactionImple < ac, BasicAction: 0:ffffac120003:-29155e6b:5919789f:d status: ActionStatus.ABORT_ONLY >
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:408)
+	... 182 more
+
+2017-05-15 09:45:25,346 ERROR [io.undertow.request] (default task-8) UT005023: Exception handling request to /user-auth/api/user: org.jboss.resteasy.spi.UnhandledException: javax.ejb.EJBException: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+	at org.jboss.resteasy.core.ExceptionHandler.handleApplicationException(ExceptionHandler.java:77)
+	at org.jboss.resteasy.core.ExceptionHandler.handleException(ExceptionHandler.java:220)
+	at org.jboss.resteasy.core.SynchronousDispatcher.writeException(SynchronousDispatcher.java:175)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:418)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:209)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.service(ServletContainerDispatcher.java:221)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:56)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.service(HttpServletDispatcher.java:51)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:85)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.api.LegacyThreadSetupActionWrapper$1.call(LegacyThreadSetupActionWrapper.java:44)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:805)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.ejb.EJBException: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:187)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:277)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:327)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:47)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:100)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.deployment.processors.StartupAwaitInterceptor.processInvocation(StartupAwaitInterceptor.java:22)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:67)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:54)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:636)
+	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:356)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:198)
+	at org.jboss.as.ee.component.ViewDescription$1.processInvocation(ViewDescription.java:185)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ProxyInvocationHandler.invoke(ProxyInvocationHandler.java:73)
+	at ch.frostnova.user.auth.api.service.UserService$$$view2.list(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.util.reflection.Reflections.invokeAndUnwrap(Reflections.java:433)
+	at org.jboss.weld.bean.proxy.EnterpriseBeanProxyMethodHandler.invoke(EnterpriseBeanProxyMethodHandler.java:128)
+	at org.jboss.weld.bean.proxy.EnterpriseTargetBeanInstance.invoke(EnterpriseTargetBeanInstance.java:56)
+	at org.jboss.weld.bean.proxy.InjectionPointPropagatingEnterpriseTargetBeanInstance.invoke(InjectionPointPropagatingEnterpriseTargetBeanInstance.java:67)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at ch.frostnova.user.auth.service.UserService$378389728$Proxy$_$$_Weld$EnterpriseProxy$.list(Unknown Source)
+	at ch.frostnova.user.auth.web.ws.UserEndpoint.list(UserEndpoint.java:41)
+	at ch.frostnova.user.auth.web.ws.UserEndpoint$Proxy$_$$_WeldClientProxy.list(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.resteasy.core.MethodInjectorImpl.invoke(MethodInjectorImpl.java:139)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invokeOnTarget(ResourceMethodInvoker.java:295)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:249)
+	at org.jboss.resteasy.core.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:236)
+	at org.jboss.resteasy.core.SynchronousDispatcher.invoke(SynchronousDispatcher.java:402)
+	... 43 more
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1692)
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1602)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:492)
+	at org.hibernate.jpa.criteria.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:50)
+	at org.jboss.as.jpa.container.TypedQueryNonTxInvocationDetacher.getResultList(TypedQueryNonTxInvocationDetacher.java:58)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.executeMethodOn(RepositoryFactorySupport.java:503)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:488)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:460)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:133)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy89.findAll(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.weld.bean.proxy.AbstractBeanInstance.invoke(AbstractBeanInstance.java:38)
+	at org.jboss.weld.bean.proxy.ProxyMethodHandler.invoke(ProxyMethodHandler.java:100)
+	at ch.frostnova.user.auth.persistence.repository.CrudRepository$UserAccountRepository$2009101270$Proxy$_$$_WeldClientProxy.findAll(Unknown Source)
+	at ch.frostnova.user.auth.service.UserServiceImpl.list(UserServiceImpl.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jboss.as.ee.component.ManagedReferenceMethodInterceptor.processInvocation(ManagedReferenceMethodInterceptor.java:52)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.doMethodInterception(Jsr299BindingsInterceptor.java:82)
+	at org.jboss.as.weld.ejb.Jsr299BindingsInterceptor.processInvocation(Jsr299BindingsInterceptor.java:93)
+	at org.jboss.as.ee.component.interceptors.UserInterceptorFactory$1.processInvocation(UserInterceptorFactory.java:63)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.invocationmetrics.ExecutionTimeInterceptor.processInvocation(ExecutionTimeInterceptor.java:43)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.jpa.interceptor.SBInvocationInterceptor.processInvocation(SBInvocationInterceptor.java:47)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InterceptorContext$Invocation.proceed(InterceptorContext.java:437)
+	at org.jboss.weld.ejb.AbstractEJBRequestScopeActivationInterceptor.aroundInvoke(AbstractEJBRequestScopeActivationInterceptor.java:64)
+	at org.jboss.as.weld.ejb.EjbRequestScopeActivationInterceptor.processInvocation(EjbRequestScopeActivationInterceptor.java:83)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.InitialInterceptor.processInvocation(InitialInterceptor.java:21)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.interceptors.ComponentDispatcherInterceptor.processInvocation(ComponentDispatcherInterceptor.java:52)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.component.pool.PooledInstanceInterceptor.processInvocation(PooledInstanceInterceptor.java:51)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:340)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275)
+	... 99 more
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:95)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:90)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:112)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.connection(StatementPreparerImpl.java:47)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:146)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:172)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:148)
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1929)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1898)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1876)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:919)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:336)
+	at org.hibernate.loader.Loader.doList(Loader.java:2617)
+	at org.hibernate.loader.Loader.doList(Loader.java:2600)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2429)
+	at org.hibernate.loader.Loader.list(Loader.java:2424)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:501)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:371)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:216)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1326)
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:87)
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:606)
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:483)
+	... 155 more
+Caused by: java.sql.SQLException: javax.resource.ResourceException: IJ000460: Error checking for a transaction
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:146)
+	at org.jboss.as.connector.subsystems.datasources.WildFlyDataSource.getConnection(WildFlyDataSource.java:66)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:386)
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:87)
+	... 176 more
+Caused by: javax.resource.ResourceException: IJ000460: Error checking for a transaction
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:424)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:747)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:138)
+	... 180 more
+Caused by: javax.resource.ResourceException: IJ000459: Transaction is not active: tx=TransactionImple < ac, BasicAction: 0:ffffac120003:-29155e6b:5919789f:d status: ActionStatus.ABORT_ONLY >
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:408)
+	... 182 more
+
+2017-05-15 09:57:21,630 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+2017-05-15 09:57:22,182 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2017-05-15 09:57:22,417 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+2017-05-15 09:57:22,418 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = ANSI_X3.4-1968
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_131-b11
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_131
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.131-b11
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = 0.0.0.0
+	jboss.home.dir = /opt/jboss/wildfly
+	jboss.host.name = 356e53be4be0
+	jboss.modules.dir = /opt/jboss/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = 356e53be4be0
+	jboss.qualified.host.name = 356e53be4be0
+	jboss.server.base.dir = /opt/jboss/wildfly/standalone
+	jboss.server.config.dir = /opt/jboss/wildfly/standalone/configuration
+	jboss.server.data.dir = /opt/jboss/wildfly/standalone/data
+	jboss.server.deploy.dir = /opt/jboss/wildfly/standalone/data/content
+	jboss.server.log.dir = /opt/jboss/wildfly/standalone/log
+	jboss.server.name = 356e53be4be0
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss/wildfly/standalone/configuration/logging.properties
+	module.path = /opt/jboss/wildfly/modules
+	org.jboss.boot.log.file = /opt/jboss/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-514.16.1.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.131-2.b11.el7_3.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss/wildfly/jboss-modules.jar -mp /opt/jboss/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/opt/jboss/wildfly -Djboss.server.base.dir=/opt/jboss/wildfly/standalone -b 0.0.0.0 -c standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = ANSI_X3.4-1968
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss
+	user.home = /opt/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = UTC
+2017-05-15 09:57:22,418 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -Xms64m -Xmx512m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/opt/jboss/wildfly/standalone/log/server.log -Dlogging.configuration=file:/opt/jboss/wildfly/standalone/configuration/logging.properties 
+2017-05-15 09:57:24,286 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2017-05-15 09:57:24,391 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.4.0.Final
+2017-05-15 09:57:24,398 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.4.0.Final
+2017-05-15 09:57:24,587 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2017-05-15 09:57:24,688 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 2 core threads with 16 task threads based on your 1 available processors
+2017-05-15 09:57:24,740 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2017-05-15 09:57:24,912 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+2017-05-15 09:57:25,094 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2017-05-15 09:57:25,280 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2017-05-15 09:57:25,288 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2017-05-15 09:57:25,296 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2017-05-15 09:57:25,311 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2017-05-15 09:57:25,350 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2017-05-15 09:57:25,582 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = mysql
+2017-05-15 09:57:25,582 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2017-05-15 09:57:25,635 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.21.Final
+2017-05-15 09:57:26,095 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.4.0.Final starting
+2017-05-15 09:57:26,096 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+2017-05-15 09:57:26,198 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 16 (per class), which is derived from thread worker pool sizing.
+2017-05-15 09:57:26,199 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 4 (per class), which is derived from the number of CPUs on this host.
+2017-05-15 09:57:26,133 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path '/opt/jboss/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2017-05-15 09:57:26,285 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2017-05-15 09:57:26,342 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2017-05-15 09:57:26,520 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2017-05-15 09:57:26,748 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTP listener default listening on 0.0.0.0:8080
+2017-05-15 09:57:26,749 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2017-05-15 09:57:26,852 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-1) WFLYDM0111: Keystore /opt/jboss/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2017-05-15 09:57:26,919 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "user-auth-ear-1.0.0-SNAPSHOT.ear" (runtime-name: "user-auth-ear-1.0.0-SNAPSHOT.ear")
+2017-05-15 09:57:26,994 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/jboss/wildfly/standalone/deployments
+2017-05-15 09:57:28,090 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+2017-05-15 09:57:28,384 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 65) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:28,385 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 65) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:28,395 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:28,429 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:28,394 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:28,429 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:28,438 WARN  [org.wildfly.security] (MSC service thread 1-2) ELY01077: Invalid alias "TLS_RSA_WITH_DES_CBC_SHA" for missing mechanism database entry "TLS_RSA_FIPS_WITH_DES_CBC_SHA"
+2017-05-15 09:57:28,465 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTPS listener https listening on 0.0.0.0:8443
+2017-05-15 09:57:28,879 INFO  [org.jboss.ws.common.management] (MSC service thread 1-2) JBWS022052: Starting JBossWS 5.1.5.Final (Apache CXF 3.1.6) 
+2017-05-15 09:57:28,922 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2017-05-15 09:57:28,923 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:/jdbc/userauth]
+2017-05-15 09:57:30,642 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-persistence.jar")
+2017-05-15 09:57:30,642 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-web-frontend.war")
+2017-05-15 09:57:30,642 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-service.jar")
+2017-05-15 09:57:30,642 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "user-auth-web-service.war")
+2017-05-15 09:57:31,436 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for userauth
+2017-05-15 09:57:31,909 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-ear-1.0.0-SNAPSHOT.ear
+2017-05-15 09:57:31,911 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 63) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:57:31,961 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 63) HHH000204: Processing PersistenceUnitInfo [
+	name: userauth
+	...]
+2017-05-15 09:57:32,075 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.2.4.Final
+2017-05-15 09:57:32,166 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 63) HHH000412: Hibernate Core {5.0.10.Final}
+2017-05-15 09:57:32,167 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 63) HHH000206: hibernate.properties not found
+2017-05-15 09:57:32,168 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 63) HHH000021: Bytecode provider name : javassist
+2017-05-15 09:57:32,259 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 63) HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-15 09:57:32,438 INFO  [org.springframework.data.jpa.repository.cdi.JpaRepositoryExtension] (MSC service thread 1-2) Activating CDI extension for Spring Data JPA repositories.
+2017-05-15 09:57:32,490 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment user-auth-web-frontend.war
+2017-05-15 09:57:32,540 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-service.jar
+2017-05-15 09:57:32,556 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'RegistrationServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:app/user-auth-service/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:module/RegistrationServiceImpl!ch.frostnova.user.auth.api.service.RegistrationService
+	java:global/user-auth/user-auth-service/RegistrationServiceImpl
+	java:app/user-auth-service/RegistrationServiceImpl
+	java:module/RegistrationServiceImpl
+
+2017-05-15 09:57:32,557 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UserServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:app/user-auth-service/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:module/UserServiceImpl!ch.frostnova.user.auth.api.service.UserService
+	java:global/user-auth/user-auth-service/UserServiceImpl
+	java:app/user-auth-service/UserServiceImpl
+	java:module/UserServiceImpl
+
+2017-05-15 09:57:32,557 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'AuthServiceImpl' in deployment unit 'subdeployment "user-auth-service.jar" of deployment "user-auth-ear-1.0.0-SNAPSHOT.ear"' are as follows:
+
+	java:global/user-auth/user-auth-service/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:app/user-auth-service/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:module/AuthServiceImpl!ch.frostnova.user.auth.api.service.AuthService
+	java:global/user-auth/user-auth-service/AuthServiceImpl
+	java:app/user-auth-service/AuthServiceImpl
+	java:module/AuthServiceImpl
+
+2017-05-15 09:57:32,561 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-persistence.jar
+2017-05-15 09:57:32,582 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment user-auth-web-service.war
+2017-05-15 09:57:32,772 INFO  [org.jboss.weld.Version] (MSC service thread 1-2) WELD-000900: 2.3.5 (Final)
+2017-05-15 09:57:33,128 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:33,128 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2017-05-15 09:57:33,479 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 62) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'user-auth-ear-1.0.0-SNAPSHOT.ear#userauth'
+2017-05-15 09:57:33,925 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0002: Started client-mappings cache from ejb container
+2017-05-15 09:57:34,370 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 62) HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-05-15 09:57:34,499 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 62) Envers integration enabled? : true
+2017-05-15 09:57:35,452 INFO  [org.hibernate.tool.hbm2ddl.SchemaUpdate] (ServerService Thread Pool -- 62) HHH000228: Running hbm2ddl schema update
+2017-05-15 09:57:35,837 INFO  [org.jboss.weld.Event] (MSC service thread 1-1) WELD-000411: Observer method [BackedAnnotatedMethod] protected org.springframework.data.repository.cdi.CdiRepositoryExtensionSupport.processAnnotatedType(@Observes ProcessAnnotatedType<X>) receives events for all annotated types. Consider restricting events using @WithAnnotations or a generic type with bounds.
