@@ -35,7 +35,7 @@ echo "> DEPLOYMENT_UNIT: " $DEPLOYMENT_UNIT
 
 echo "Configuring SSL: security realm"
 cli "/core-service=management/security-realm=\"ssl-only-realm\":add"
-cli "/core-service=management/security-realm=\"ssl-only-realm\"/server-identity=\"ssl\":add(keystore-path=\"/opt/jboss/wildfly/standalone/configuration/certificates/server-keystore.jks\",keystore-password=\"keystore\",alias=\"wildfly-server\",key-password=\"secret\")"
+cli "/core-service=management/security-realm=\"ssl-only-realm\"/server-identity=\"ssl\":add(keystore-path=\"/opt/jboss/wildfly/standalone/configuration/certificates/server-keystore.jks\",keystore-password=\"keystore\",alias=\"wildfly-server\",key-password=\"keystore\")"
 
 echo "Configuring SSL: HTTPS listener"
 cli "/subsystem=undertow/server=default-server/https-listener=https:remove"
