@@ -25,7 +25,7 @@
     "pattern": "Wert entspricht nicht dem erwarteten Format (${requiredPattern})"
   },
   "app": {
-    "title": "Angular2 Demo",
+    "title": "Angular Demo",
     "description": "Hallo Angular"
   },
   "menu": {
