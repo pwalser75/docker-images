@@ -14,6 +14,13 @@ MySQL database, with a persistent data volume, using Docker Compose.
 Create image / run:
 
     docker-compose up -d
+	
+## postgres
+PostgreSQL database, with a persistent data volume, using Docker Compose.
+
+Create image / run:
+
+    docker-compose up -d
 
 ## wildfly-mysql-driver
 JBoss Wildfly Java EE server with MySQL driver/datasource.
