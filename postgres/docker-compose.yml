@@ -1,0 +1,14 @@
+version: '2'
+services:
+  postgres:
+    container_name: postgres-db
+    restart: always
+    image: postgres:latest
+    ports:
+    - "5432:5432"
+    environment:
+      POSTGRES_DB: "test-db"
+      POSTGRES_USER: "test"
+      POSTGRES_PASSWORD: "secret"
+    volumes:
+    - ./postgres-data:/opt/docker/postgres/data

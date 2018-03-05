@@ -1,7 +1,7 @@
 version: '2'
 services:
   mysql:
-    container_name: mysql-example
+    container_name: mysql-db
     restart: always
     image: mysql:latest
     ports:
@@ -9,7 +9,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: 'root-secret'
       MYSQL_DATABASE: 'test-db'
-      MYSQL_USER: 'test-user'
+      MYSQL_USER: 'test'
       MYSQL_PASSWORD: 'secret'
     volumes:
       - ./mysql-data:/var/lib/mysql
