@@ -22,6 +22,17 @@ Create image / run:
 
     docker-compose up -d
 
+## kafka
+Apache Kafka, Zookeeper and Redpanda Console.
+
+Create image / run:
+
+    docker-compose up -d
+
+Kafka Broker: `localhost:9092` 
+Kafka Viewer (Redpanda Console): http://localhost:9000
+
+
 ## wildfly-mysql-driver
 JBoss Wildfly Java EE server with MySQL driver/datasource.
 
